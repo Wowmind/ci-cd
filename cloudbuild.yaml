@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/ci-cd-404512/github.com/wowmind/ci-cd:830a38502561a1cbdeaade6a8bdcbe854bc73921', '.']
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', 'gcr.io/ci-cd-404512/github.com/wowmind/ci-cd:830a38502561a1cbdeaade6a8bdcbe854bc73921']
+
+
